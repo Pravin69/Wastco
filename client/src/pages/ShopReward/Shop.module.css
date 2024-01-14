@@ -1,0 +1,216 @@
+.container {
+    width: 100%;
+    /* height: 100vh; */
+    max-width: 130rem;
+    padding: 0rem 4rem;
+    display: flex;
+    gap: 2rem;
+    /* overflow-x: hidden; */
+  }
+  
+  .dashboard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .dashboardHead {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .dashboardHead > .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+  .head > :nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  
+  .progressbar {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      position: relative;
+      overflow-x: scroll;
+      /* margin-bottom: 20px; */
+      padding: 20px 0;
+  }
+  
+  .progressbar > * {
+    margin-right: 30px; /* Set the desired constant gap between items */
+  }
+  
+  .progressbar > *:last-child {
+    margin-right: 0; /* Remove the margin-right from the last item */
+  }
+  
+  
+  
+  .progressbar::before {
+      content: "";
+      position: absolute;
+      background-color: #e0e0e0;
+      top: 50%;
+      left: 0;
+      /* right: 0; */
+      transform: translateY(-50%);
+      border-radius: 5px;
+      height: 4px;
+      width: calc((30px) * 20 + (40px) * (21));
+      z-index: -1;
+      transition: 0.4s ease;
+  }
+  
+  .progress {
+      position: absolute;
+      background-color: #3498db;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      border-radius: 5px;
+      height: 4px;
+      /* width: 50%; */
+      z-index: -1;
+      transition: 0.4s ease;
+  }
+  
+  .circle {
+      background-color: #fff;
+      color: #000;
+      border-radius: 50%;
+      min-height: 40px;
+      min-width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 3px solid #e0e0e0;
+      transition: 0.4s ease;
+  }
+  
+  .circle.active{
+      background-color: #3498db;
+  }
+  
+  .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+  }
+  
+  .btn {
+      padding: 5px 20px;
+      font-weight: bold;
+      background-color: green;
+      outline-style: none;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+      border: 0;
+      margin: 5px;
+      border-radius: 5px;
+  }
+  
+  .btn.active {
+      transform: scale(0.98);
+  }
+  
+  .btn:focus {
+      outline: none;
+  }
+  
+  .btn:disabled {
+      background-color: #999;
+      cursor: not-allowed;
+  }
+  
+  
+  .cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .cardHead {
+    font-size: 1rem;
+  }
+  
+  .cardHead > :nth-child(1) {
+    color: rgba(255, 255, 255, 0.835);
+  }
+  
+  .cardHead > :nth-child(2) {
+    margin-left: 1.5rem;
+    font-size: 0.8rem;
+    color: var(--green);
+  }
+  
+  .cardAmount > :nth-child(1) {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.776);
+    position: relative;
+    bottom: 5px;
+  }
+  
+  .cardAmount > :nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 8px;
+  }
+  
+  .customModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .customModal .modal {
+    padding: 20px;
+    width: 350px;
+    height: 300px;
+    text-align: center;
+    background-color: rgba(39, 51, 89, 0.5);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .customModal .closeButton {
+    background-color: #f52b2bc6;
+    color: #fff;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .customModal .closeButton:hover {
+    background-color: #999;
+  }
+  
+  

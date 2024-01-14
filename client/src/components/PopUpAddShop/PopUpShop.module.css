@@ -1,0 +1,143 @@
+/* PopupForm.module.css */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal {
+    padding: 20px;
+    width: 800px;
+    text-align: center;
+    background-color: rgba(39, 51, 89, 0.5);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    z-index: 1;
+    position: relative; 
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .durationButton {
+    border: none;
+    height: 45px;
+    background: var(--orange-gradient);
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-top: 1.1rem;
+  }
+
+
+.content {
+    display: flex;
+    justify-content: space-around;
+}
+.subtitle {
+    font-size: 1.2rem;
+}
+
+.closeIcon {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  
+
+  .userDetails{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+  }
+
+
+  .userDetails .inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+  }
+
+  .QrBox {
+    height: 100px;
+    width: calc(100% / 2 - 20px);
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-top: 10px;
+  }
+
+
+  .inputBox .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+
+  .userDetails .inputBox input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    color: black;
+    text-transform: "none"
+  }
+
+
+  .userDetails .inputBox input:focus,
+  .userDetails .inputBox input:valid{
+    border-color: #9b59b6;
+  }
+   
+
+  .qrContainer {
+    height: 120px;
+    width: 130px;
+    margin-right: 35px;
+  }
+   
+  .button {
+    width: 100%;
+     height: 45px;
+     margin: 35px 0;
+     display: flex;
+     justify-content: center;
+   }
+  
+   .button input{
+     height: 100%;
+     width: 100px;
+     border-radius: 5px;
+     border: none;
+     color: #fff;
+     font-size: 18px;
+     font-weight: 500;
+     letter-spacing: 1px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     background: linear-gradient(135deg, #71b7e6, #9b59b6);
+   }
+   
+   .button input:hover{
+    /* transform: scale(0.99); */
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+    }

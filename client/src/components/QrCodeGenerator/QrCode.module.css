@@ -1,0 +1,16 @@
+.qrcode__wrapper {
+    display: inline-block;
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  .durationButton {
+    border: none;
+    height: 45px;
+    background: var(--orange-gradient);
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-top: 1.1rem;
+  }

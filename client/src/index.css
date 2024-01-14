@@ -1,0 +1,432 @@
+/* Start Global Rules */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700;800;900&family=Yellowtail&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+}
+
+*::selection {
+  background: var(--pink);
+  color: #fff;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --main-color: #3b71fe;
+  --hover-color: rgba(59, 114, 254, 0.8);
+  --very-light-blue: rgb(216, 218, 253);
+  --gray1-color: rgb(255 255 255 / 50%);
+  --white: #ffffff;
+  --black-color: black;
+  --title-color: #2f4145;
+  --main-transition: 0.2s ease-in-out;
+  --green-color: #40916c;
+  --purple: #814096;
+  --pink: #f83292;
+  --gradient: linear-gradient(to right, #c471ed, #12c2e9);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+}
+
+.container_custom {
+  padding: 7rem 2%;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  min-height: 100vh;
+  padding: 7.5rem 9% 2rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 3rem;
+  border-radius: 5rem;
+  background: var(--gradient);
+  font-size: 1.7rem;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.heading {
+  text-align: center;
+  background: var(--gradient);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+#menu-bar {
+  color: var(--black-color);
+  border: 0.1rem solid var(--black-color);
+}
+
+.active-menu {
+  clip-path: polygon(100% 100%, 100% 0, 0 0, 0 100%);
+}
+
+.navbar__links a {
+  color: var(--white);
+  transition: all var(--main-transition);
+}
+
+.navbar__links a:hover {
+  color: var(--hover-color);
+}
+
+.header__i {
+  background-color: var(--white);
+  transition: var(--main-transition);
+}
+
+.home__title {
+  color: var(--white);
+}
+
+.home__controls svg {
+  width: 4rem;
+  fill: white;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+
+.services-box {
+  flex: 1 1 30rem;
+  background: rgb(39, 51, 89, 0.4);
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  margin: 1.5rem;
+  padding: 3rem 2rem;
+  border-radius: 2rem;
+  text-align: center;
+  transition: 0.2s linear;
+}
+
+.services-box img {
+  display: inline;
+  height: 15rem;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+}
+
+.services-box h3 {
+  font-size: 2.2rem;
+  color: #fff;
+  padding-top: 1rem;
+  font-weight: 600;
+}
+
+.services-box p {
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.content p {
+  font-size: 1.7rem;
+  color: #fff;
+  padding: 1rem 0;
+  text-transform: none;
+}
+
+.content ul {
+  list-style-type: disc;
+}
+
+.content ul li {
+  font-size: 1.7rem;
+  color: #fff;
+  padding: 1rem 0;
+  line-height: 0.7;
+  margin-left: 5rem;
+  text-transform: none;
+}
+
+.newsletter form input[type="submit"]:hover {
+  color: var(--pink);
+}
+
+.review-box {
+  background: rgb(39, 51, 89, 0.4);
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  flex: 1 1 30rem;
+  border-radius: 2rem;
+}
+
+.review-box .fa-quote-right {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 11rem;
+  color: var(--pink);
+  opacity: 0.3;
+}
+
+.review-box .user img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 7rem;
+  width: 7rem;
+  margin-top: 2rem;
+  display: inline-block;
+}
+
+.review-box .user h3 {
+  color: var(--pink);
+  font-size: 2rem;
+}
+
+.review-box .user .stars .fa-star,
+.review-box .user .stars .fa-star-half-stroke {
+  color: var(--purple);
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.review-box .comment {
+  text-align: justify;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 1rem;
+  text-transform: none;
+}
+
+.inputBox input,
+.inputBox textarea {
+  width: 100%;
+  background: none;
+  outline: none;
+  color: #fff;
+  margin: 1.5rem 0;
+  padding: 0.5rem 0;
+  font-size: 1.7rem;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+  text-transform: none;
+}
+
+.inputBox label {
+  position: absolute;
+  top: 1.7rem;
+  left: 0;
+  font-size: 1.7rem;
+  color: #666;
+  transition: 0.2s linear;
+}
+
+.inputBox input:focus ~ label,
+.inputBox input:valid ~ label,
+.inputBox textarea:focus ~ label,
+.inputBox textarea:valid ~ label {
+  top: -0.5rem;
+  font-size: 1.5rem;
+  color: var(--pink);
+}
+
+.footer-box {
+  flex: 1 1 25rem;
+  margin: 2rem;
+}
+
+.footer-box h3 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+
+.footer-box p {
+  text-align: justify;
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+  color: #eee;
+  text-transform: none;
+}
+
+.footer-box a {
+  display: block;
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+  color: #eee;
+}
+
+.footer-box a:hover {
+  text-decoration: underline;
+}
+
+.footer-box .info {
+  display: flex;
+  align-items: center;
+}
+
+.footer-box .info .fa-phone,
+.footer-box .info .fa-envelope,
+.footer-box .info .fa-location-dot {
+  margin: 0.5rem 0;
+  margin-right: 1rem;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--pink);
+  font-size: 1.5rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  text-align: center;
+}
+
+.gradient-bg-welcome {
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 0%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+}
+
+.gradient-bg-services {
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 0%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 50% 100%, hsla(225, 39%, 25%, 1) 0, transparent 50%);
+}
+
+.gradient-bg-transactions {
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 100%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 50% 0%, hsla(225, 39%, 25%, 1) 0, transparent 50%);
+}
+
+.gradient-bg-newsletter {
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 100%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 53%
+    ),
+    radial-gradient(at 50% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+}
+
+.gradient-bg-about {
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 0%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 53%
+    ),
+    radial-gradient(at 50% 100%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+}
+
+.gradient-bg-footer {
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 100%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 53%
+    ),
+    radial-gradient(at 50% 150%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+}
+
+.blue-glassmorphism {
+  background: rgb(39, 51, 89, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* white glassmorphism */
+.white-glassmorphism {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.text-gradient {
+  background-color: #fff;
+  background-image: radial-gradient(
+      at 4% 36%,
+      hsla(0, 0%, 100%, 1) 0,
+      transparent 53%
+    ),
+    radial-gradient(at 100% 60%, rgb(0, 0, 0) 0, transparent 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+

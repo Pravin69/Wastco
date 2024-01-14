@@ -1,0 +1,96 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@asseinfo/react-kanban": "^2.2.0",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-brands-svg-icons": "^6.2.1",
+    "@fortawesome/free-regular-svg-icons": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@fullcalendar/core": "^6.1.4",
+    "@fullcalendar/daygrid": "^6.1.4",
+    "@fullcalendar/interaction": "^6.1.4",
+    "@fullcalendar/react": "^6.1.4",
+    "@fullcalendar/timegrid": "^6.1.4",
+    "@mapbox/mapbox-sdk": "^0.15.2",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.11.10",
+    "@syncfusion/ej2": "^19.4.48",
+    "@syncfusion/ej2-react-popups": "^19.4.52",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.2.2",
+    "canvas": "^2.11.2",
+    "dom-to-image": "^2.6.0",
+    "echarts": "^5.4.1",
+    "echarts-for-react": "^3.0.2",
+    "html-to-image": "^1.11.11",
+    "mapbox-gl": "^2.14.1",
+    "material-react-table": "^1.8.1",
+    "material-ui-icons": "^1.0.0-beta.36",
+    "moment": "^2.29.4",
+    "qrcode.react": "^3.1.0",
+    "react": "^18.2.0",
+    "react-confetti": "^6.1.0",
+    "react-dom": "^18.2.0",
+    "react-google-location": "^1.2.2",
+    "react-icons": "^4.8.0",
+    "react-map-gl": "^7.0.23",
+    "react-modal": "^3.16.1",
+    "react-qr-code": "^2.0.11",
+    "react-qr-reader": "^3.0.0-beta-1",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.6.1",
+    "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
+    "react-use": "^17.4.0",
+    "react-validation": "^3.0.7",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.2",
+    "rodal": "^2.0.1",
+    "slick-carousel": "^1.8.1",
+    "validator": "^13.7.0",
+    "web-vitals": "^2.1.4",
+    "zustand": "^4.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "autoprefixer": "^10.4.13",
+    "html5-qrcode": "^2.3.8",
+    "postcss": "^8.4.20",
+    "redux-devtools-extension": "^2.13.9",
+    "tailwindcss": "^3.2.4",
+    "tailwindcss-textshadow": "^2.1.3"
+  }
+}
